@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#box {
+    max-width:100px;
+    align-content: center;
+    padding: 10 10 10 10;
+}
