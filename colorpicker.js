@@ -33,9 +33,9 @@ function displayConversion(redCalc,greenCalc,blueCalc,l){
 
 }
 
-function displayColor(redCalc,greenCalc,blueCalc,l){
+function displayColor(redCalc,greenCalc,blueCalc){
 
-    coloredDisplay.style.backgroundColor = "rgb(" + redCalc + "," + greenCalc + "," + blueCalc +")";
+    coloredDisplay.style.backgroundColor = "rgb(" + Number(redCalc) + "," + Number(greenCalc) + "," + Number(blueCalc) +")";
 
 }
 
