@@ -2,6 +2,7 @@
 var userRed = document.getElementById("userRed");
 var userGreen = document.getElementById("userGreen");
 var userBlue = document.getElementById("userBlue");
+var button = document.getElementById("buttonConvert");
 
 //Calculation Vars
 var redCalc = 0;
@@ -33,47 +34,36 @@ function displayConversion(redCalc,greenCalc,blueCalc,l){
 
 }
 
-function displayColor(redCalc,greenCalc,blueCalc){
+//Event Listeners - Validation - Calc
 
-    coloredDisplay.style.backgroundColor = `rgb(${Number(redCalc)},${Number(greenCalc)},${Number(blueCalc)})`;
+button.addEventListener("click", convert());
 
-}
-
-//Error Handling/Validation
-
-function validateRed(userRed){
-
-    if (userRed.value > 1) {
-        alert("Please enter a number equal to or below 1.");
+userRed.addEventListener("keydown",function(){
+    if (userRed.value > 1){
+        alert("Enter a number at or below 1.");
     } else {
-        
+        redCalc = 255 * Number(userRed);
     }
+    convert();
+})
 
-}
-
-function validateGreen(userGreen){
-
-    if (userGreen.value > 1) {
-        alert("Please enter a number equal to or below 1.");
+userGreen.addEventListener("keydown",function(){
+    if (userGreen.value > 1){
+        alert("Enter a number at or below 1.");
     } else {
-    
+        greenCalc = 255 * Number(userGreen);
     }
+    convert();
+})
 
-}
-
-function validateBlue(userBlue){
-
-    if (userBlue.value > 1) {
-        alert("Please enter a number equal to or below 1.");
+userBlue.addEventListener("keydown",function(){
+    if (userBlue.value > 1){
+        alert("Enter a number at or below 1.");
     } else {
-        
+        blueCalc = 255 * Number(userBlue);
     }
-
-}
-
-
-
-
+    convert();
+})
 
 
 

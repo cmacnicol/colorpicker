@@ -14,7 +14,7 @@ h1 {
     display:block;
 }
 
-.buttonConvert {
+#buttonConvert {
     padding-top: 10px;
     align-content: center;
 }
