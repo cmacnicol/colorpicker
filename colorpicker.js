@@ -1,11 +1,8 @@
-//User inputs 
-let userRed = parseInt(prompt("Enter R"));
-let userGreen = parseInt(prompt("Enter G"));
-let userBlue = parseInt(prompt("Enter B"));
+//User inputs - Declarations 
+var userRed = document.getElementById("userRed");
+var userGreen = document.getElementById("userGreen");
+var userBlue = document.getElementById("userBlue");
 
-//Min/Max RGB Value
-const rgbMax = 255;
-const rgbMin = 0;
 
 const userColor = "rgb(" + userRed + ", " + userGreen + ", " + userBlue + ")";
 
