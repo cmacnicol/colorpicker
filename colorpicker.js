@@ -44,8 +44,9 @@ function displayColor(redCalc,greenCalc,blueCalc){
 function validateRed(userRed){
 
     if (userRed.value > 1) {
-    } else {
         alert("Please enter a number equal to or below 1.");
+    } else {
+        
     }
 
 }
@@ -53,8 +54,9 @@ function validateRed(userRed){
 function validateGreen(userGreen){
 
     if (userGreen.value > 1) {
-    } else {
         alert("Please enter a number equal to or below 1.");
+    } else {
+    
     }
 
 }
@@ -62,8 +64,9 @@ function validateGreen(userGreen){
 function validateBlue(userBlue){
 
     if (userBlue.value > 1) {
-    } else {
         alert("Please enter a number equal to or below 1.");
+    } else {
+        
     }
 
 }
