@@ -1,13 +1,13 @@
 //User inputs 
-let userRed = document.getElementById("userRed").value;
-let userGreen = document.getElementById("userGreen").value;
-let userBlue = document.getElementById("userBlue").value;
+let userRed = parseInt(prompt("Enter R"));
+let userGreen = parseInt(prompt("Enter G"));
+let userBlue = parseInt(prompt("Enter B"));
 
 //Min/Max RGB Value
 const rgbMax = 255;
 const rgbMin = 0;
 
-const userColor = [userRed,userGreen,userBlue];
+const userColor = "rgb(" + userRed + ", " + userGreen + ", " + userBlue + ")";
 
 function convert(){
 
