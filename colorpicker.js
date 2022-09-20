@@ -23,7 +23,20 @@ function convert(){
     var greenCalc = Math.round(greenCalc/totalRGB);
     var blueCalc = Math.round(blueCalc/totalRGB);
 
-    
+    displayConversion(redCalc,greenCalc,blueCalc,l);
+    displayColor(redCalc,greenCalc,blueCalc,l);
+}
+
+function displayConversion(redCalc,greenCalc,blueCalc,l){
+
+    result.innerHTML = "The conversion is as follows: (" + redCalc + ", " + greenCalc + ", " + blueCalc + ", " + l;
+
+}
+
+function displayColor(redCalc,greenCalc,blueCalc,l){
+
+    coloredDisplay.style.backgroundColor = "rgb(" + redCalc + "," + greenCalc + "," + blueCalc +")";
+
 }
 
 
