@@ -4,6 +4,8 @@ var userGreen = document.getElementById("userGreen");
 var userBlue = document.getElementById("userBlue");
 
 
+
+
 const userColor = "rgb(" + userRed + ", " + userGreen + ", " + userBlue + ")";
 
 function convert(){
