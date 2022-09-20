@@ -7,14 +7,13 @@ let userBlue = document.getElementById("userBlue").value;
 const rgbMax = 255;
 const rgbMin = 0;
 
-function convert()
-{
+const userColor = [userRed,userGreen,userBlue];
 
-    document.getElementById("result").innerHTML = userRed/rgbMax, userGreen/rgbMax, userBlue/rgbMax;
+function convert(){
 
-    
+    document.getElementById("box").style.backgroundColor = userColor;
+
 }
-
 
 
 
